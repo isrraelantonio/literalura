@@ -177,6 +177,7 @@ public class Principal{
                     pt -  português.
                     en -  ingles.
                     es -  espanhol.
+                    fr -  franceis.
                                                  
                     """;
 
@@ -184,7 +185,7 @@ public class Principal{
         String linguaLivro = leitura.nextLine();
         List<Livro> livrosPorLinuga = repositorioLivro.buscarLivroPorLingua(linguaLivro);
         if (livrosPorLinuga.isEmpty()){
-            System.out.println("nehum livro com esse idioma foi registrado.");
+            System.out.println("Nehum livro com esse idioma foi encontrado.");
         }else {
             livrosPorLinuga.stream()
                     .forEach(System.out::println);

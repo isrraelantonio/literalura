@@ -14,7 +14,6 @@ public class Livro {
     private Integer download;
     private String lingua;
     @ManyToOne()
-    @JoinColumn(name = "autor_id")
     private Autor  autor;
 
 
